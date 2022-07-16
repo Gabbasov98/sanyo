@@ -58,7 +58,8 @@
         font-size: 12px;
         line-height: 125%;
         cursor: pointer;
-        display: block;
+        display: flex;
+        align-items: center;
         color: $gray2;
         &:before {
             content: '';
@@ -77,6 +78,8 @@
     }
     a{
         border-bottom: 1px solid $gray2;
+        position: relative;
+        z-index: 3;
         &:hover{
             color: inherit;
             border-bottom: transparent;
