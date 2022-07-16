@@ -1,0 +1,73 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html',{"index":"true"})
+        </header>
+        <main class="content">
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__text">
+                        <h1 class="about__title display1">О компании</h1>
+                        <div class="about__subtitle display2">
+                            Sanyo Elevator Co. Ltd входит в группу компаний Sanyo Heavy Industry Group, и является одним из самых известных производителей лифтов и эскалаторов. <span>Компания основана в 1954 году.</span>
+                        </div>
+                        <div class="about__desc body-text">Sanyo Elevator Co., Ltd строго следит за соблюдением государственных стандартов при производстве и постоянно инвестирует в научно-исследовательские работы и обновление производственных мощностей, благодаря чему качество выпускаемой продукции находится на самом высоком уровне. </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about-card">
+                            <div class="about-card__img">
+                                <img src="img/about.webp" alt="">
+                            </div>
+                            <div class="about-card__title display3">Сертификация качества</div>
+                            <div class="about-card__desc body-text">Компания успешно прошла сертификацию систем менеджмента качества,
+                                экологического менеджмента и менеджмента охраны здоровья и
+                                обеспечения безопасности труда. Получены сертификаты соответствия
+                                Евразийского экономического союза и Европейского союза на всю
+                                выпускаемую продукцию. Стандарты безопасности Sanyo Elevator Co., Ltd
+                                более строгие, чем национальные стандарты безопасности лифтов Японии
+                                и Европейского союза.
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card__img">
+                                <img src="img/about2.webp" alt="">
+                            </div>
+                            <div class="about-card__title display3">Компания дистрибьютер</div>
+                            <div class="about-card__desc body-text">
+                                ООО «Рентал инжиниринг» является региональным дистрибьютером Sanyo
+                                в Российской Федерации и Республике Беларусь. Все лифты, эскалаторы
+                                и траволаторы, производства Sanyo имеют сертификаты соответствия
+                                Евразийского экономического союза. Специалисты ООО «Рентал
+                                инжиниринг» имеют большой опыт продаж и установки лифтов и
+                                эскалаторов в различных условиях, и всегда помогут Вам подобрать
+                                оптимальный вариант оборудования для Ваших условий.
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="about__download mbtn mbtn-red">
+                        <span>Скачать презентацию</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17.8" viewBox="0 0 13 17.8">
+                            <g transform="translate(499.805 -303.477) rotate(90)">
+                                <path d="M12610.717,401.575l6.141,5.678-6.141,5.8" transform="translate(-12299.884 86)" fill="none" stroke="#eb342c" stroke-width="1.6"/>
+                                <line x1="12.503" transform="translate(303.477 493.305)" fill="none" stroke="#eb342c" stroke-width="1.6"/>
+                                <line x2="13" transform="translate(320.477 499.805) rotate(-90)" fill="none" stroke="#eb342c" stroke-width="1.6"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

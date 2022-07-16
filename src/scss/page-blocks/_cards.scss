@@ -1,0 +1,148 @@
+@import "../vars";
+.catalog-card{
+  &__top{
+    position: relative;
+  }
+  &__badge{
+    position: absolute;
+    top: 31px;
+    right: -1px;
+    background-color: $primary;
+    z-index: 2;
+    font-size: 14px;
+    color: #fff;
+    height: 22px;
+    padding: 0 13px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  &__img{
+    height: 380px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title{
+    margin-top: 30px;
+    line-height: 120%;
+  }
+}
+
+.about-card{
+  &__img{
+    height: 410px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title{
+    margin-top: 40px;
+  }
+  &__desc{
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .catalog-card{
+    &__img{
+      height: 320px;
+    }
+  }
+  .about-card{
+    &__img{
+      height: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .catalog-card{
+    &__img{
+      height: 270px;
+    }
+    &__title{
+      font-size: 20px;
+      line-height: 130%;
+      margin-top: 13px;
+    }
+  }
+
+  .about-card{
+    &__img{
+      height: 260px;
+    }
+    &__title{
+      margin-top: 31px;
+    }
+    &__desc{
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px){
+  .catalog-card{
+    &__img{
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .catalog-card{
+    &__img{
+      height: 220px;
+    }
+  }
+
+  .about-card{
+    &__img{
+      height: 220px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px){
+  .catalog-card{
+    &__img{
+      height: 330px;
+    }
+  }
+
+  .about-card{
+    &__img{
+      height: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .catalog-card{
+    &__img{
+      height: 280px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  .catalog-card{
+    &__img{
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .catalog-card{
+    &__img{
+      height: 230px;
+    }
+  }
+}

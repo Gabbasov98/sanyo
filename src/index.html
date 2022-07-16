@@ -1,0 +1,95 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header header--index">
+            @@include('components/page-blocks/_header.html',{"index":"true"})
+        </header>
+        <main class="content">
+
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <h1 class="main__title display1">Современные лифты
+                            для вашего комфорта</h1>
+                        <div class="main__desc body-text">Более 10 поездок на лифте ежедневно совершает каждый житель мегаполиса. И компания Sanyo Elevator сделала это время комфортным — благодаря интеллектуальному управлению, умному освещению и системам безопасности. </div>
+                        <a href="" class="main__btn mbtn mbtn-red">
+                            @@include('components/ui/_button.html',{"title":"Подробнее"})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__items">
+                        @@include('components/page-blocks/_catalog.html')
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__left">
+                            <div class="info__title display2">Sanyo Elevator входит в число известных производителей лифтов и эскалаторов</div>
+                            <div class="info__desc body-text">С 1954 года Sanyo Elevator предлагает долговечную и безопасную продукцию для офисных, торговых и медицинских центров, жилых домов и других объектов. </div>
+                            <a href="" class="info__btn mbtn mbtn-red">
+                                @@include('components/ui/_button.html',{"title":"Каталог лифтов"})
+                            </a>
+                        </div>
+                        <div class="info__right">
+                            <div class="info__items">
+                                <div class="info__item">
+                                    <div class="info__item-icon">
+                                        <img src="img/info-icon.svg" alt="">
+                                    </div>
+                                    <div class="info__item-title body-text">
+                                        Бесшумное движение <br>
+                                        и мягкие остановки лифтов
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-icon">
+                                        <img src="img/info-icon2.svg" alt="">
+                                    </div>
+                                    <div class="info__item-title body-text">
+                                        Надежность и низкая <br>
+                                        стоимость обслуживания
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-icon">
+                                        <img src="img/info-icon3.svg" alt="">
+                                    </div>
+                                    <div class="info__item-title body-text">
+                                        Экономия и генерация <br>
+                                        электроэнергии
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-icon">
+                                        <img src="img/info-icon4.svg" alt="">
+                                    </div>
+                                    <div class="info__item-title body-text">
+                                        Интеллектуальная система <br>
+                                        управления группой лифтов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer footer--index">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

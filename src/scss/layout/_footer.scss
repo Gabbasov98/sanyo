@@ -1,0 +1,144 @@
+@import "../vars";
+.footer{
+  border-top: $border;
+  padding: 50px 0;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    width: 206px;
+    display: block;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__contacts{
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+  }
+  &__phone,
+  &__mail{
+    color: $gray2;
+    font-size: 16px;
+    line-height: 125%;
+  }
+  &__phone{
+    position: relative;
+    &::after{
+      content: '/';
+      margin: 0 8px;
+    }
+  }
+  &__right{
+    padding-top: 7px;
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  &__copyright,
+  &__by{
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray2;
+  }
+  &__copyright{
+    span{
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+  &__by{
+    a{
+      color: $primary;
+      border-bottom: 1px solid $primary;
+      &:hover{
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+  &__link{
+    margin-left: 53px;
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 700;
+    &--active{
+      color: $primary;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .footer{
+    &__right{
+      padding: 0;
+    }
+  }
+  .footer-nav{
+    &__link{
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .footer{
+    padding: 51.5px 0 58px;
+    &--index{
+      border:none;
+    }
+    &__logo{
+      width: 165px;
+    }
+    &__contacts{
+      margin-top: 48.5px;
+      display: block;
+    }
+    &__phone,
+    &__mail{
+      font-size: 15px;
+      line-height: 167%;
+    }
+    &__phone{
+      margin-bottom: 7px;
+      display: block;
+      &::after{
+        display: none;
+      }
+    }
+    &__bottom{
+      margin-top: 37px;
+      display: block;
+    }
+    &__copyright,
+    &__by{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__by{
+      margin-top: 7px;
+    }
+  }
+  .footer-nav{
+    display: block;
+    &__link{
+      display: block;
+      margin: 0 0 16px;
+      font-size: 13px;
+      line-height: 153%;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

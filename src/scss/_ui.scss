@@ -1,0 +1,95 @@
+@import 'vars';
+@import 'components/_text.scss';
+@import 'components/_buttons.scss';
+@import 'components/_fonts.scss';
+.fg {
+    position: relative;
+    textarea,
+    input {
+        border-radius: 2px;
+        border: 1px solid rgba(#184797, .21);
+        padding: 0 10px;
+        height: 47px;
+        width: 100%;
+        font-size: 16px;
+        background-color: transparent;
+        color: $black;
+        &:focus{
+            border-color: rgba(#184797, .6);
+        }
+    }
+    textarea{
+        height: 97px;
+        resize: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    label{
+        display: block;
+        font-size: 16px;
+        line-height: 162.5%;
+        font-weight: 700;
+        margin-bottom: 11px;
+    }
+}
+
+.check {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+        &:checked+label {
+            &::before {
+                background-color: $primary;
+                background-image: url(../img/check.svg);
+            }
+        }
+    }
+    label {
+        padding-left: 36px;
+        position: relative;
+        min-height: 20px;
+        font-size: 12px;
+        line-height: 125%;
+        cursor: pointer;
+        display: block;
+        color: $gray2;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            border: 1px solid $primary;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .100s;
+        }
+    }
+    a{
+        border-bottom: 1px solid $gray2;
+        &:hover{
+            color: inherit;
+            border-bottom: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .fg{
+        label{
+            font-size: 13px;
+            line-height: 200%;
+            margin-bottom: 9px;
+        }
+    }
+}

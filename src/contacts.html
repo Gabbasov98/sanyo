@@ -1,0 +1,77 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Контакты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html',{"index":"true"})
+        </header>
+        <main class="content">
+
+            <section class="contacts">
+                <div class="container">
+                    <h1 class="contacts__title display1">Контакты</h1>
+                    <div class="contacts__inner">
+                        <div class="contacts__left">
+                            <div class="contacts__subtitle display3">ООО «Рентал инжиниринг»</div>
+                            <div class="contacts__items">
+                                <div class="contacts__item">
+                                    <div class="contacts__item-desc body-text">Россия, Московская область, <br> г. Химки, улица Бабакина, 5А, офис № 211.</div>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__item-title body-text">Телефон</div>
+                                    <a href="tel:+74952553707" class="contacts__item-desc body-text">+7 (495) 255-37-07</a>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__item-title body-text">E-mail</div>
+                                    <a href="mailto:mail@rental-engineering.ru" class="contacts__item-desc body-text">mail@rental-engineering.ru</a>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <div class="map__block">
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa58694318534c5d495638e4812ef0e8b57bd4ec1ce2dc38394f41c8783e60ab7&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__right">
+                            <div class="contacts__subtitle display3">Оставить заявку</div>
+                            <form action="" class="contacts__form">
+                                <fieldset class="fg">
+                                    <label>Представьтесь</label>
+                                    <input type="text">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>E-mail</label>
+                                    <input type="text">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>Телефон</label>
+                                    <input type="text">
+                                </fieldset>
+                                <fieldset class="fg">
+                                    <label>Сообщение</label>
+                                    <textarea></textarea>
+                                </fieldset>
+                                <div class="contacts__check check">
+                                    <input type="checkbox">
+                                    <label>
+                                        Я <a href="">принимаю условия</a> об обработке моих <br> персональных данных
+                                    </label>
+                                </div>
+                                <button class="contacts__btn mbtn mbtn-red">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
