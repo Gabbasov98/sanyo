@@ -5,9 +5,10 @@ modalTogglers.forEach(el => {
         let modalId = el.getAttribute("data-modal")
         let modal = document.querySelector(`#${modalId}`)
         modal.classList.add("modal--active")
-
+        body.classList.add("fixed-body")
         modal.onclick = function () {
             this.classList.remove("modal--active")
+            body.classList.remove("fixed-body")
         }
 
         document.querySelector(`#${modalId} .modal__dialog`).onclick = function (e) {
@@ -16,6 +17,7 @@ modalTogglers.forEach(el => {
 
         document.querySelector(`#${modalId} .modal__close`).onclick = function (e) {
             modal.classList.remove("modal--active")
+            body.classList.remove("fixed-body")
         }
     }
 })
