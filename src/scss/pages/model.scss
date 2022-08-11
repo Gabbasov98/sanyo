@@ -191,6 +191,17 @@
     &__slider{
       margin-top: 20px;
     }
+    .swiper{
+      &-pagination{
+        &-bullet{
+          width: 3px;
+          height: 3px;
+          &-active{
+            width: 16px;
+          }
+        }
+      }
+    }
   }
 }
 
