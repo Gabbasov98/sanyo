@@ -10,6 +10,12 @@ body {
   color: $black;
   &.fixed-body {
     overflow-y: hidden;
+    height: 100vh;
+    .wrapper{
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden;
+    }
   }
 }
 .wrapper {

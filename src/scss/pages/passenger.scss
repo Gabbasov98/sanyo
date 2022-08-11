@@ -1,0 +1,197 @@
+@import "../vars";
+.passenger{
+  padding-bottom: 77px;
+  &__title{
+    color: $black2;
+  }
+  &__inner{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    display: grid;
+    grid-template-columns: 1fr 0.97fr;
+    gap: 60px;
+    width: 730px;
+    flex-shrink: 0;
+  }
+  &__right{
+    flex-grow: 1;
+    max-width: 390px;
+    margin-left: 20px;
+  }
+  &__item{
+    &-img{
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    &-title{
+      margin-top: 26px;
+      color: $black2;
+    }
+    &-desc{
+      margin-top: 11px;
+      font-size: 16px;
+      line-height: 112.5%;
+    }
+  }
+  &__prop{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    &-icon{
+      width: 84px;
+      flex-shrink: 0;
+      margin-right: 16px;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    &-title{
+      line-height: 100%;
+    }
+    &-desc{
+      margin-top: 1px;
+    }
+  }
+  &__btn{
+    margin-top: 40px;
+    width: 275px;
+    height: 58px;
+    svg{
+      width: 17px;
+    }
+  }
+}
+
+.calc{
+  background-color: $gray;
+  padding: 42px 50px 56px;
+  margin-top: 72px;
+  &__title{
+    color: $black2;
+    line-height: 110%;
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px 40px;
+    margin-top: 23px;
+  }
+  &__check {
+    margin-top: 22px;
+  }
+  &__btn{
+    margin-top: 22px;
+    height: 58px;
+    font-weight: 700;
+  }
+  .fg{
+    select,
+    input{
+      background-color: #fff;
+      border-color: #E6E2E2;
+      height: 48px;
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .passenger{
+    &__left{
+      gap: 40px 20px;
+      width: 600px;
+    }
+  }
+
+  .calc{
+    padding: 38px 22px 53px;
+    &__form{
+      gap: 21px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .passenger{
+    padding-bottom: 55px;
+    &__inner{
+      display: block;
+      margin-top: 31px;
+    }
+    &__left{
+      max-width: 100%;
+    }
+    &__right{
+      max-width: 100%;
+      margin: 40px 0 0;
+    }
+    &__item{
+      &-title{
+        margin-top: 19px;
+      }
+      &-desc{
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+    &__prop{
+      margin-top: 25px;
+      &-icon{
+        width: 64px;
+      }
+      &-title{
+        font-size: 24px;
+      }
+      &-desc{
+        margin-top: 2px;
+      }
+    }
+    &__btn{
+      width: 218px;
+      height: 47px;
+      margin-top: 28.5px;
+      svg{
+        width: 12.83px;
+      }
+    }
+  }
+
+  .calc{
+    margin-top: 50px;
+    &__form{
+      margin-top: 21px;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__check,
+    &__btn{
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .calc{
+    &__form{
+      grid-template-columns: 1fr;
+    }
+    &__btn{
+      height: 55px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .passenger{
+    &__left{
+      grid-template-columns: 100%;
+    }
+  }
+}

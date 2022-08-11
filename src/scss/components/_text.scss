@@ -29,6 +29,30 @@ p{
   }
 }
 
+.bold{
+  font-weight: 700;
+}
+
+.mlist{
+  li{
+    line-height: inherit;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 14px;
+      height: 1px;
+      background-color: $primary;
+    }
+    &:not(:last-child){
+      margin-bottom: 13px;
+    }
+  }
+}
+
 @media screen and (max-width: 992px){
   .display1{
     font-size: 26px;
@@ -42,5 +66,10 @@ p{
   .body-text{
     font-size: 14px;
     line-height: 161%;
+  }
+  .mlist{
+    li{
+      padding-left: 25px;
+    }
   }
 }

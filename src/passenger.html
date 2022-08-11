@@ -1,0 +1,74 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Пассажирские лифты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html',{"index":"true"})
+        </header>
+        <main class="content">
+
+            <section class="passenger">
+                <div class="container">
+                    <h1 class="passenger__title display1">Пассажирские лифты</h1>
+                    <div class="passenger__inner">
+                        <div class="passenger__left">
+                            <div class="passenger__item">
+                                <div class="passenger__item-img">
+                                    <img src="img/passenger.png" alt="">
+                                </div>
+                                <div class="passenger__item-title display3">Пассажирский лифт VF320</div>
+                                <div class="passenger__item-desc">с малым машинным помещением</div>
+                            </div>
+                            <div class="passenger__item">
+                                <div class="passenger__item-img">
+                                    <img src="img/passenger2.png" alt="">
+                                </div>
+                                <div class="passenger__item-title display3">Пассажирский лифт VF320</div>
+                                <div class="passenger__item-desc">без машинного помещения</div>
+                            </div>
+                        </div>
+                        <div class="passenger__right">
+                            <div class="passenger__subtitle body-text bold">Особенности серии VF</div>
+                            <div class="passenger__desc body-text">
+                                <p>Пассажирские лифты Sanyo предназначены для перевозки людей и оборудованы автоматической системой управления движения. Выпускаются в вариантах исполнения с машинным помещением и без, грузоподъемностью от 320 до 1600 кг.</p>
+                                <p>Скорость подъема варьируется от 1 до 8 м/с. Отделка пассажирских лифтов так же отличается разнообразием решений: от крашеной стали до индивидуальных дизайнерских решений.</p>
+                            </div>
+                            <div class="passenger__prop">
+                                <div class="passenger__prop-icon">
+                                    <img src="img/weight.svg" alt="">
+                                </div>
+                                <div class="passenger__prop-content">
+                                    <div class="passenger__prop-title display2">320-1600 кг</div>
+                                    <div class="passenger__prop-desc body-text">Грузоподъемность</div>
+                                </div>
+                            </div>
+                            <a href="" class="passenger__btn mbtn mbtn-red">
+                                <span>Скачать документацию</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17.8" viewBox="0 0 13 17.8">
+                                    <g transform="translate(499.805 -303.477) rotate(90)">
+                                        <path d="M12610.717,401.575l6.141,5.678-6.141,5.8" transform="translate(-12299.884 86)" fill="none" stroke="#eb342c" stroke-width="1.6"></path>
+                                        <line x1="12.503" transform="translate(303.477 493.305)" fill="none" stroke="#eb342c" stroke-width="1.6"></line>
+                                        <line x2="13" transform="translate(320.477 499.805) rotate(-90)" fill="none" stroke="#eb342c" stroke-width="1.6"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="calc">
+                        @@include('components/page-blocks/_calc.html')
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

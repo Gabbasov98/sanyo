@@ -35,6 +35,7 @@
   &__phone{
     font-size: 16px;
     line-height: 125%;
+    color: $black2;
   }
 }
 
@@ -47,6 +48,7 @@
     font-size: 16px;
     line-height: 125%;
     font-weight: 700;
+    color: $black2;
     &--active{
       color: $primary;
     }
@@ -161,6 +163,10 @@
     &__mail{
       display: block;
       margin-top: 20px;
+    }
+    &__mail,
+    &__phone{
+      color: $gray2;
     }
   }
 

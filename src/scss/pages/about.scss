@@ -4,6 +4,10 @@
   &__text{
     max-width: 890px;
   }
+  &__title,
+  &__subtitle{
+    color: $black2;
+  }
   &__subtitle{
     margin-top: 36px;
     span{

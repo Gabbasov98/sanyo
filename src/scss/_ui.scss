@@ -4,6 +4,7 @@
 @import 'components/_fonts.scss';
 .fg {
     position: relative;
+    select,
     textarea,
     input {
         border-radius: 2px;
@@ -23,6 +24,26 @@
         resize: none;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-image: url(../img/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right 15.5px center;
+        color: #888888;
+        &::-ms-expand {
+            display: none; // IE
+        }
+        &:focus{
+            color: $black;
+        }
+    }
+    .select--active{
+        color: $black;
     }
     label{
         display: block;
@@ -87,12 +108,33 @@
     }
 }
 
+.swiper-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-bullet{
+        width: 16px;
+        height: 1px;
+        background-color: #fff;
+        border-radius: 0;
+        opacity: 1;
+        &-active{
+            height: 3px;
+            background-color: $primary;
+        }
+    }
+}
+
 @media screen and (max-width: 992px){
     .fg{
         label{
             font-size: 13px;
             line-height: 200%;
             margin-bottom: 9px;
+        }
+        select,
+        input{
+            font-size: 14px;
         }
     }
 }

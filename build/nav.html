@@ -39,17 +39,78 @@
         <a href="contacts.html" style="display: block; margin-bottom: 20px;">
             Контакты
         </a>
+        <a href="model.html" style="display: block; margin-bottom: 20px;">
+            Модель Лифта
+        </a>
+        <a href="passenger.html" style="display: block; margin-bottom: 20px;">
+            Пассажирские лифты
+        </a>
+        <a href="cargo.html" style="display: block; margin-bottom: 20px;">
+            Грузовые лифты
+        </a>
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal" id="calcModal" aria-hidden="true">
+    <div class="modal__dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.849" height="14.849" viewBox="0 0 14.849 14.849">
+                <g transform="translate(-2784.146 -7309.146)">
+                    <line x2="20" transform="translate(2784.5 7309.5) rotate(45)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+                    <line x2="20" transform="translate(2784.5 7323.642) rotate(-45)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+                </g>
             </svg>
         </button>
 
+        <div class="calc__title display3">Калькулятор расчета</div>
+<form class="calc__form">
+    <fieldset class="fg">
+        <label>Тип лифта</label>
+        <select>
+            <option selected disabled hidden>Выбрать из списка</option>
+            <option>Пассажирский</option>
+            <option>Грузовой</option>
+        </select>
+    </fieldset>
+    <fieldset class="fg">
+        <label>Отделка кабины</label>
+        <select>
+            <option selected disabled hidden>Выбрать вариант отделки</option>
+            <option>Отделка кабины</option>
+            <option>Отделка кабины 2</option>
+        </select>
+    </fieldset>
+    <fieldset class="fg">
+        <label>Грузоподъемность</label>
+        <select>
+            <option selected disabled hidden>Выбрать из списка</option>
+            <option>Грузоподъемность</option>
+            <option>Грузоподъемность2</option>
+        </select>
+    </fieldset>
+    <fieldset class="fg">
+        <label>Представьтесь</label>
+        <input type="text">
+    </fieldset>
+    <fieldset class="fg">
+        <label>Телефон</label>
+        <input type="text">
+    </fieldset>
+    <fieldset class="fg">
+        <label>E-mail</label>
+        <input type="text">
+    </fieldset>
+
+    <div class="calc__check check">
+        <input checked type="checkbox">
+        <label>
+            <span>
+                Я <a href="">принимаю условия</a> об обработке моих <br> персональных данных
+            </span>
+        </label>
+    </div>
+    <button class="calc__btn mbtn mbtn-red">Отправить заявку</button>
+</form>
 
 
     </div>
@@ -57,6 +118,7 @@
 
 
 <!-- <div class="modal-backdrop show"></div> -->
+
     <!--  -->
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

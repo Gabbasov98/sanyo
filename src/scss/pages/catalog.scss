@@ -27,6 +27,7 @@
   grid-template-columns: repeat(2, calc(50% - 22px));
   gap: 54px 44px;
   &__title{
+    color: $black2;
     span{
       color: $primary;
     }

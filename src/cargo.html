@@ -1,0 +1,75 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Пассажирские лифты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html',{"index":"true"})
+        </header>
+        <main class="content">
+
+            <section class="cargo">
+                <div class="container">
+                    <h1 class="cargo__title display1">Грузовые лифты Sanyo</h1>
+                    <div class="cargo__inner">
+                        <div class="cargo__slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="img/cargo.png" data-fancybox="cargo" class="swiper-slide cargo__img">
+                                    <img src="img/cargo.png" alt="">
+                                </a>
+                                <a href="img/cargo2.png" data-fancybox="cargo" class="swiper-slide cargo__img">
+                                    <img src="img/cargo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="cargo__content">
+                            <div class="cargo__left">
+                                <div class="cargo__subtitle display2">Спроектированы для перевозки грузов большого веса до и рассчитаны на заезд погрузочной техники в кабину лифта.</div>
+                                <div class="cargo__desc body-text">
+                                    <p>Лифты рассчитаны на применение в промышленных условиях, просты в обслуживании и безопасны за счет применения интеллектуальных технологий. Полностью загруженный лифт не останавливается на промежуточных остановках. Благодаря этому применение грузовых лифтов SANYO повыша- ет производительность предприятия. Оптимизированный дизайн кабины с установленными отбойниками позволяет избежать повреждений кабины при погрузке. Грузовые лифты SANYO широко используется на фабриках, заводах и складах, в торговых центрах, библиотеках и других помещениях для аккуратной перевозки грузов.</p>
+                                    <p>Также выпускаются версии для перевозки автомобилей, отличающиеся дополнительными датчиками для избежание повреждения автомобиля при въезде в кабину, створками дверей. А также возможностью бесконтактного управления лифтом, не выходя из автомобиля.</p>
+                                </div>
+                                <a href="" class="cargo__btn mbtn mbtn-red">
+                                    <span>Скачать документацию</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17.8" viewBox="0 0 13 17.8">
+                                        <g transform="translate(499.805 -303.477) rotate(90)">
+                                            <path d="M12610.717,401.575l6.141,5.678-6.141,5.8" transform="translate(-12299.884 86)" fill="none" stroke="#eb342c" stroke-width="1.6"></path>
+                                            <line x1="12.503" transform="translate(303.477 493.305)" fill="none" stroke="#eb342c" stroke-width="1.6"></line>
+                                            <line x2="13" transform="translate(320.477 499.805) rotate(-90)" fill="none" stroke="#eb342c" stroke-width="1.6"></line>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cargo__right">
+                                <div class="cargo__prop">
+                                    <div class="cargo__prop-icon">
+                                        <img src="img/weight.svg" alt="">
+                                    </div>
+                                    <div class="cargo__prop-content">
+                                        <div class="cargo__prop-title display2">
+                                            до <span>8000</span> кг
+                                        </div>
+                                        <div class="cargo__prop-desc body-text">Грузоподъемность</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc">
+                        @@include('components/page-blocks/_calc.html')
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

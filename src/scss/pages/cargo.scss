@@ -1,0 +1,151 @@
+@import "../vars";
+.cargo{
+  padding-bottom: 77px;
+  &__title{
+    color: $black2;
+  }
+  &__inner{
+    margin-top: 40px;
+  }
+  &__slider{
+    .swiper{
+      &-container{
+        overflow: hidden;
+      }
+      &-wrapper{
+        align-items: stretch;
+      }
+      &-slide{
+        height: auto;
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &-pagination{
+        display: none;
+      }
+    }
+  }
+  &__content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    flex-grow: 1;
+  }
+  &__right{
+    width: 270px;
+    flex-shrink: 0;
+    margin-left: 44px;
+  }
+  &__subtitle{
+    max-width: 802px;
+  }
+  &__desc{
+    margin-top: 20px;
+  }
+  &__prop{
+    display: flex;
+    align-items: center;
+    &-icon{
+      width: 84px;
+      flex-shrink: 0;
+      margin-right: 16px;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    &-title{
+      line-height: 100%;
+      font-size: 24px;
+      span{
+        font-size: 32px;
+      }
+    }
+    &-desc{
+      margin-top: 1px;
+    }
+  }
+  &__btn{
+    margin-top: 52px;
+    width: 275px;
+    height: 58px;
+    svg{
+      width: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .cargo{
+    padding-bottom: 55px;
+    &__inner{
+      margin-top: 30px;
+    }
+    &__content{
+      margin-top: 25px;
+    }
+    &__right{
+      width: 210px;
+    }
+    &__desc{
+      margin-top: 25px;
+    }
+    &__prop{
+      &-icon{
+        width: 64px;
+      }
+      &-title{
+        font-size: 24px;
+        span{
+          font-size: inherit;
+        }
+      }
+      &-desc{
+        margin-top: 2px;
+      }
+    }
+    &__btn{
+      width: 218px;
+      height: 47px;
+      margin-top: 28.5px;
+      svg{
+        width: 12.83px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .cargo{
+    &__slider{
+      position: relative;
+      overflow: hidden;
+      .swiper{
+        &-pagination{
+          display: flex;
+          bottom: 18px;
+        }
+      }
+    }
+    &__content{
+      display: block;
+      padding-bottom: 75px;
+      position: relative;
+    }
+    &__right{
+      margin: 25.5px 0 0 0;
+      width: 100%;
+    }
+    &__btn{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
