@@ -15,6 +15,7 @@ function variantsSlider() {
         slidesPerView: 4,
         spaceBetween: 6,
         loop: true,
+        speed: 500,
         navigation: {
             nextEl: '.variants .swiper-button-next',
             prevEl: '.variants .swiper-button-prev',
